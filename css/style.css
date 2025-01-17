@@ -179,7 +179,7 @@ nav.login ul .cart::after {
   position: absolute;
   top: -72px;
   right: -6px;
-  font-size: 60px; /* Aumentamos el tamaño del punto */
+  font-size: 60px;
   color: #f38160;
 }
 nav.login ul .cart img {
