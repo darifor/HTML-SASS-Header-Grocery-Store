@@ -1,0 +1,15 @@
+
+@mixin reset-list() {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+@mixin button() {
+  display: inline-block;
+  background-color: $orange;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+}

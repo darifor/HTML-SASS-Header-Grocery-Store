@@ -1,0 +1,62 @@
+nav.main-menu {
+
+    ul {
+        @include reset-list;
+        gap: 35px;
+
+        a {
+            color: $grey;
+            text-decoration: none;
+
+            &.active, &:hover {
+                color: $orange;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 80%;
+                    background-color: $orange;
+                    bottom: -10px;
+                    left: 10%;
+                }
+            }
+        }
+    }
+}
+
+nav.login {
+    
+    ul {
+        @include reset-list;
+        gap: 25px;
+
+        .cart {
+            position: relative;
+
+            &::after {
+                content: ".";
+                position: absolute;
+                top: -72px;
+                right:-6px;
+                font-size: 60px; /* Aumentamos el tamaño del punto */
+                color: $orange;
+              }
+
+            img {
+                width: 20px;
+            }
+
+            &:hover img {
+                transform: scale(1.2) rotate(10deg);
+            }
+        }
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

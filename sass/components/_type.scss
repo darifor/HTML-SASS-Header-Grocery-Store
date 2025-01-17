@@ -1,0 +1,26 @@
+.type {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+
+    &__item {
+
+        img {
+            width: 60px;
+        }
+
+        h3 {
+            font-size: 15px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #909090;
+        }
+    }
+}

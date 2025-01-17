@@ -1,0 +1,103 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        width: 50%;
+        padding-top: 70px;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 61px;
+            font-family: $title-font;
+            letter-spacing: -2px;
+            margin-bottom: 15px;
+
+            .color-orange {
+                color: $orange;
+                font-weight: 600;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            color: $grey;
+            max-width: 80%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+
+        img {
+            max-width: 500px;
+            position: relative;
+            left: -80px;
+        }
+    }
+
+    &__search {
+        width: 65%;
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 25px;
+
+        input {
+            flex: 1;
+            background-color: rgba(#D0D0D2, 0.25);
+            padding: 5px 20px;
+            border: 0;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 12px;
+
+            &::placeholder {
+                color: #949494;
+                font-weight: 300;
+            }
+        }
+
+        button {
+            background-color: $orange;
+            width: 40px;
+            border: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            img {
+                width: 18px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__info {
+        @include reset-list();
+        flex-wrap: wrap;
+        width: 60%;
+        gap: 20px;
+
+        li {
+            width: 45%;
+            color: $grey;
+            font-weight: 300;
+            font-size: 12px;
+            position: relative;
+            padding-left: 20px;
+            
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-image: url('../img/icon-check.svg');
+                background-size: 15px;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
