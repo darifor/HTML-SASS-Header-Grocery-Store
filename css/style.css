@@ -124,7 +124,8 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  margin-top: 30px;
+  margin-top: 5px;
+  margin-bottom: 35px;
 }
 .type__item img {
   width: 60px;
@@ -179,7 +180,7 @@ nav.login ul .cart::after {
   position: absolute;
   top: -72px;
   right: -6px;
-  font-size: 60px;
+  font-size: 60px; /* Aumentamos el tamaño del punto */
   color: #f38160;
 }
 nav.login ul .cart img {
